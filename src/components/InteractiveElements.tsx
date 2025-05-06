@@ -4,6 +4,7 @@ import designStyles from "../pages/designSystem/DesignSystem.module.css";
 import Dots from "./interactiveElements/Dots";
 import Navigation from "./interactiveElements/Navigation";
 import Tabs from "./interactiveElements/Tabs";
+import NumberIndicators from "./interactiveElements/NumberIndicators";
 
 const InteractiveElements = () => {
   return (
@@ -15,7 +16,7 @@ const InteractiveElements = () => {
       {/*  navigation */}
       <Navigation />
 
-      <div class="flex">
+      <div class="flex" style="--gap: 5rem; width: 100%; margin:2rem 0">
         <div style="margin-top:5rem;">
           {/* explore button */}
           <A
@@ -31,6 +32,7 @@ const InteractiveElements = () => {
           {/* dots */}
           <Dots />
           {/* numbers */}
+          <NumberIndicators />
         </div>
       </div>
     </section>

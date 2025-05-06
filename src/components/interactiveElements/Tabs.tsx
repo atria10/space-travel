@@ -4,7 +4,7 @@ const Tabs = () => {
   return (
     <div
       class={`${navigationStyles.underlineIndicators} ${navigationStyles.tabList} flex`}
-      style="--gap:1rem; margin: 2rem 0"
+      style="margin: 2rem 0"
     >
       <button
         aria-selected="true"
