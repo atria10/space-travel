@@ -1,6 +1,9 @@
 import { A } from "@solidjs/router";
-import designStyles from "../pages/designSystem/DesignSystem.module.css";
 import buttonStyles from "../modules/Button.module.css";
+import designStyles from "../pages/designSystem/DesignSystem.module.css";
+import Dots from "./interactiveElements/Dots";
+import Navigation from "./interactiveElements/Navigation";
+import Tabs from "./interactiveElements/Tabs";
 
 const InteractiveElements = () => {
   return (
@@ -10,10 +13,10 @@ const InteractiveElements = () => {
       </h2>
 
       {/*  navigation */}
-      <div></div>
+      <Navigation />
 
       <div class="flex">
-        <div style='margin-top:5rem;'>
+        <div style="margin-top:5rem;">
           {/* explore button */}
           <A
             href="#"
@@ -22,11 +25,11 @@ const InteractiveElements = () => {
             Explore
           </A>
         </div>
-        <div style="margin-bottom:50vh;">
+        <div style="flow margin-bottom:50vh; --flow-space:4rem">
           {/* tabs */}
-
+          <Tabs />
           {/* dots */}
-
+          <Dots />
           {/* numbers */}
         </div>
       </div>
