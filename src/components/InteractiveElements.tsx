@@ -1,6 +1,6 @@
 import { A } from "@solidjs/router";
 import buttonStyles from "../modules/Button.module.css";
-import designStyles from "../pages/designSystem/DesignSystem.module.css";
+import designStyles from "../modules/DesignSystem.module.css";
 import Dots from "./interactiveElements/Dots";
 import Navigation from "./interactiveElements/Navigation";
 import Tabs from "./interactiveElements/Tabs";

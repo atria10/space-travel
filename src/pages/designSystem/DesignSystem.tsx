@@ -1,7 +1,6 @@
 import Colors from "../../components/Colors";
 import InteractiveElements from "../../components/InteractiveElements";
 import Typography from "../../components/Typography";
-import "./DesignSystem.module.css";
 
 const DesignSystem = () => {
   return (

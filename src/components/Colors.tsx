@@ -1,9 +1,9 @@
-import styles from "../pages/designSystem/DesignSystem.module.css";
+import designStyles from "../modules/DesignSystem.module.css";
 
 const Colors = () => {
   return (
     <section id="colors" style=" padding:1rem 2rem;">
-      <h2 class={styles.numberedTitle}>
+      <h2 class={designStyles.numberedTitle}>
         <span class="text-accent">01</span> colors
       </h2>
       <div class="flex" style="--gap: 5rem; width: 100%; margin:2rem 0">

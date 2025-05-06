@@ -1,9 +1,9 @@
-import styles from "../pages/designSystem/DesignSystem.module.css";
+import designStyles from "../modules/DesignSystem.module.css";
 
 const Typography = () => {
   return (
     <section id="typoghraphy" style="padding:1rem 2rem;">
-      <h2 class={styles.numberedTitle}>
+      <h2 class={designStyles.numberedTitle}>
         <span class="text-accent">02</span> typography
       </h2>
       <div class="flex" style="--gap: 5rem; width: 100%; margin:2rem 0">
