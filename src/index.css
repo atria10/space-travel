@@ -67,3 +67,36 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+
+/*  ----------------------  */
+/* Utility classes */
+/* ----------------------- */
+
+.flex{
+  display:flex;
+  gap:var(--gap,1rem) /*(dynamic, default 1 rem)*/
+}
+.grid{
+  display: grid;
+  gap:var(--gap,1rem) /*(dynamic, default 1 rem)*/
+}
+
+.container{
+  max-width:80rem;
+  margin: 0 auto;
+  padding: 0 2em; /* no padding at the top, 2 inline */
+}
+
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
