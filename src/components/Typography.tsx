@@ -7,8 +7,7 @@ const Typography = () => {
         <span class="text-accent">02</span> typography
       </h2>
       <div class="flex" style="--gap: 5rem; width: 100%; margin:2rem 0">
-        <div class="flow" style="flex-basis:100%; --flow-space:2rem">
-          
+        <div style="flex-basis:100%; --flow-space:2rem">
           <div>
             <p class="text-accent">Heading 1 - Bellefair Regular - 150px</p>
             <p class="fs-900 ff-serif uppercase">Earth</p>
@@ -36,7 +35,7 @@ const Typography = () => {
             </p>
           </div>
         </div>
-        <div class="flow" style="flex-basis:100%; --flow-space:2rem">
+        <div style="flex-basis:100%; --flow-space:2rem">
           <div>
             <p class="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
             <p class="fs-500 ff-serif uppercase">384,400 km</p>
