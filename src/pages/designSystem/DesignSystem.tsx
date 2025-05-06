@@ -1,10 +1,14 @@
 import Colors from "../../components/Colors";
+import Typography from "../../components/Typography";
 
 const DesignSystem = () => {
   return (
     <div class="container">
-      <h1>Design System</h1>
-      <Colors />
+      <h1 class="ff-sans-cond fs-700">Design System</h1>
+      <div class="grid">
+        <Colors />
+        <Typography />
+      </div>
     </div>
   );
 };
