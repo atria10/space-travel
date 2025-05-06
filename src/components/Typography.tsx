@@ -1,7 +1,9 @@
+import styles from "../pages/designSystem/DesignSystem.module.css";
+
 const Typography = () => {
   return (
-    <section id="typoghraphy" style="margin:4rem 0;">
-      <h2 class="uppercase letter-spacing-1">
+    <section id="typoghraphy" style="padding:1rem 2rem;">
+      <h2 class={styles.numberedTitle}>
         <span class="text-accent">02</span> typography
       </h2>
       <div class="flex" style="--gap: 5rem; width: 100%; margin:2rem 0">
@@ -28,7 +30,9 @@ const Typography = () => {
               Heading 5 - Bellefair Condensed Regular - 28px - 4.75 Character
               Space
             </p>
-            <p class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel space</p>
+            <p class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
+              So, you want to travel space
+            </p>
           </div>
         </div>
         <div style={{ "flex-basis": "100%" }}>
@@ -41,30 +45,34 @@ const Typography = () => {
               Subheading 2 - Barlow Condensed Regular- 14px - 2.35 Character
               Space
             </p>
-            <p class="fs-200 ff-sans-cond uppercase letter-spacing-3">Avg. Distance</p>
+            <p class="fs-200 ff-sans-cond uppercase letter-spacing-3">
+              Avg. Distance
+            </p>
           </div>
           <div>
             <p class="text-accent">
               Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space
             </p>
-            <p class="fs-300  uppercase ff-sans-cond letter-spacing-2">Europa</p>
+            <p class="fs-300  uppercase ff-sans-cond letter-spacing-2">
+              Europa
+            </p>
           </div>
 
           <div>
             <p class="text-accent">Body Text</p>
             <p class="">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-            dignissimos modi quam necessitatibus obcaecati corporis, voluptas
-            quia mollitia, delectus recusandae doloremque repudiandae provident
-            corrupti amet temporibus deleniti facilis cum. Maxime! Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Quae dignissimos modi
-            quam necessitatibus obcaecati corporis, voluptas quia mollitia,
-            delectus recusandae doloremque repudiandae provident corrupti amet
-            temporibus deleniti facilis cum. Maxime! Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Quae dignissimos modi quam
-            necessitatibus obcaecati corporis, voluptas quia mollitia, delectus
-            recusandae doloremque repudiandae provident corrupti amet temporibus
-            deleniti facilis cum. Maxime!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+              dignissimos modi quam necessitatibus obcaecati corporis, voluptas
+              quia mollitia, delectus recusandae doloremque repudiandae
+              provident corrupti amet temporibus deleniti facilis cum. Maxime!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+              dignissimos modi quam necessitatibus obcaecati corporis, voluptas
+              quia mollitia, delectus recusandae doloremque repudiandae
+              provident corrupti amet temporibus deleniti facilis cum. Maxime!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+              dignissimos modi quam necessitatibus obcaecati corporis, voluptas
+              quia mollitia, delectus recusandae doloremque repudiandae
+              provident corrupti amet temporibus deleniti facilis cum. Maxime!
             </p>
           </div>
         </div>
