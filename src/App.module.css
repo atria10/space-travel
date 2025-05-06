@@ -1,0 +1,11 @@
+.box{
+  background-color: aqua;
+  padding:1rem
+}
+
+
+.cta{
+  background: pink;
+  padding: 2rem;
+  border-radius: 1rem;
+}
