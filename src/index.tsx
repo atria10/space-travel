@@ -2,7 +2,7 @@
 import { render } from "solid-js/web";
 
 import { Route, Router } from "@solidjs/router";
-import App from "./App";
+import Home from "./pages/home/Home";
 import DesignSystem from "./pages/designSystem/DesignSystem";
 import "./index.css";
 import NotFound from "./pages/NotFound";
@@ -18,7 +18,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(
   () => (
     <Router>
-      <Route path="/" component={App} />
+      <Route path="/" component={Home} />
       <Route path="/design-system" component={DesignSystem} />
       <Route path="*paramName" component={NotFound} />
     </Router>

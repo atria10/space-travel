@@ -4,7 +4,7 @@ import {  A } from "@solidjs/router";
 const App: Component = () => {
   return (
     <div class={`container  `}>
-      <h1>ROOT PAGE</h1>
+      <h1>Home PAGE</h1>
       <div class="container flex">
         <A href="/design-system">Go to Design System </A>
       </div>
