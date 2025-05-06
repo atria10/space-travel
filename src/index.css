@@ -120,6 +120,20 @@ select {
   gap: var(--gap, 1rem); /*(dynamic, default 1 rem)*/
 }
 
+/* *+* is equal to *:not(:first-child) --> both of them exclude the first adiacent child */
+
+/* Adds vertical spacing between direct child elements in a flow layout, 
+   excluding the first child, and outlines them for debugging purposes */
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
+  outline: 1px solid red;
+}
+
+/* .flow > *:not(:first-child) {
+  margin-top: var(--flow-space, 1rem) ;
+  outline: 1px solid red;
+} */
+
 .container {
   max-width: 80rem;
   margin: 0 auto;
