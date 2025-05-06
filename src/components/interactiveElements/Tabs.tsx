@@ -6,24 +6,20 @@ const Tabs = () => {
       class={`${navigationStyles.underlineIndicators} ${navigationStyles.tabList} flex`}
       style="margin: 2rem 0"
     >
-      <button
+      <div
         aria-selected="true"
-        class="uppercase ff-sans-cond text-accent letter-spacing-2 bg-dark "
-      >
-        Moon
-      </button>
-      <button
+      >Moon
+      </div>
+      <div
         aria-selected="false"
-        class="uppercase ff-sans-cond text-accent letter-spacing-2 bg-dark "
       >
-        Mars
-      </button>
-      <button
+       Mars
+      </div>
+      <div
         aria-selected="false"
-        class="uppercase ff-sans-cond text-accent letter-spacing-2 bg-dark "
       >
         Europa
-      </button>
+      </div>
     </div>
   );
 };

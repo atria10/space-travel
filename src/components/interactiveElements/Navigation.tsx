@@ -1,31 +1,28 @@
 import { A } from "@solidjs/router";
+import { For } from "solid-js";
 import navigationStyles from "../../modules/Navigation.module.css";
+type Props = { links: string[]; isPreview?: boolean };
 
-const Navigation = () => {
+const Navigation = ({ links, isPreview = false }: Props) => {
   return (
     <div>
       <nav>
         <ul
           class={`${navigationStyles.primaryNavigation} ${navigationStyles.underlineIndicators} flex`}
         >
-          <li class={navigationStyles.active}>
-            <A class="uppercase text-white letter-spacing-2" href="#">
-              <span>01</span>
-              Active
-            </A>
-          </li>
-          <li>
-            <A class="uppercase text-white letter-spacing-2" href="#">
-              <span>02</span>
-              Hovered
-            </A>
-          </li>
-          <li>
-            <A class="uppercase text-white letter-spacing-2" href="#">
-              <span>03</span>
-              Idle
-            </A>
-          </li>
+          <For each={links}>
+            {(link, i) => (
+              
+                <A
+                  activeClass={navigationStyles.active}
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href={isPreview ? "#" : `/${link}`}
+                >
+                  <span>0{i() + 1}</span>
+                  {link}
+                </A>
+            )}
+          </For>
         </ul>
       </nav>
     </div>

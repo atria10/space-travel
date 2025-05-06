@@ -14,7 +14,7 @@ const InteractiveElements = () => {
       </h2>
 
       {/*  navigation */}
-      <Navigation />
+      <Navigation  links={['active','hovered','idle']} isPreview={true}/>
 
       <div class="flex" style="--gap: 5rem; width: 100%; margin:2rem 0">
         <div style="margin-top:5rem;">
@@ -26,7 +26,7 @@ const InteractiveElements = () => {
             Explore
           </A>
         </div>
-        <div style="flow margin-bottom:50vh; --flow-space:4rem">
+        <div style="margin-bottom:50vh;">
           {/* tabs */}
           <Tabs />
           {/* dots */}
