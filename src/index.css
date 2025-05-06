@@ -1,4 +1,13 @@
 /*  ----------------------  */
+/* Custom Properties */
+/* ----------------------- */
+:root {
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+}
+
+/*  ----------------------  */
 /* Reset */
 /* ----------------------- */
 
@@ -68,28 +77,26 @@ select {
   }
 }
 
-
 /*  ----------------------  */
 /* Utility classes */
 /* ----------------------- */
 
-.flex{
-  display:flex;
-  gap:var(--gap,1rem) /*(dynamic, default 1 rem)*/
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem); /*(dynamic, default 1 rem)*/
 }
-.grid{
+.grid {
   display: grid;
-  gap:var(--gap,1rem) /*(dynamic, default 1 rem)*/
+  gap: var(--gap, 1rem); /*(dynamic, default 1 rem)*/
 }
 
-.container{
-  max-width:80rem;
+.container {
+  max-width: 80rem;
   margin: 0 auto;
   padding: 0 2em; /* no padding at the top, 2 inline */
 }
 
-
-.sr-only{
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -99,4 +106,27 @@ select {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+
+/*  ----------------------  */
+/* colors */
+/* ----------------------- */
+
+.bg-dark {
+  background-color: hsl(var(--clr-dark));
+}
+.bg-accent {
+  background-color: hsl(var(--clr-light));
+}
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+.text-accent {
+  color: hsl(var(--clr-light));
+}
+.text-white {
+  color: hsl(var(--clr-white));
 }
