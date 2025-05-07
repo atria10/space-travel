@@ -1,14 +1,15 @@
 import { A } from "@solidjs/router";
 import type { Component } from "solid-js";
 import buttonStyles from "../modules/Button.module.css";
+import homeStyles from "../modules/Home.module.css";
 
 const Home: Component = () => {
   return (
-    <div class="grid-container">
+    <div class={`grid-container ${homeStyles.home}`}>
       <div>
-        <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-2">
+        <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
           So you want to travel to
-          <span class="fs-900 ff-serif text-white block" >Space</span>
+          <span class="fs-900 ff-serif text-white block">Space</span>
         </h1>
         <p>
           Let's face it; if you want to go to space, you might as well genuinely
@@ -20,7 +21,7 @@ const Home: Component = () => {
       <div>
         <A
           href="#"
-          class={`${buttonStyles.largeButton} uppercase ff-serif bg-white text-dark fs-600`}
+          class={`${buttonStyles.largeButton} uppercase ff-serif bg-white text-dark `}
         >
           Explore
         </A>

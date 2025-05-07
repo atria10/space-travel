@@ -2,45 +2,45 @@
 /* Custom Properties */
 /* ----------------------- */
 :root {
-   /* colors */
-   --clr-dark: 230 35% 7%;
-   --clr-light: 231 77% 90%;
-   --clr-white: 0 0% 100%;
-   
-   /* font-sizes */
-   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
-   --fs-800: 3.5rem;
-   --fs-700: 1.5rem;
-   --fs-600: 1rem;
-   --fs-500: 1rem;
-   --fs-400: 0.9375rem;
-   --fs-300: 1rem;
-   --fs-200: 0.875rem;
-   
-   /* font-families */
-   --ff-serif: "Bellefair", serif;
-   --ff-sans-cond: "Barlow Condensed", sans-serif;
-   --ff-sans-normal: "Barlow", sans-serif;
+  /* colors */
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+
+  /* font-sizes */
+  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-800: 3.5rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1rem;
+  --fs-500: 1rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /* font-families */
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
 }
 
 @media (min-width: 35em) {
   :root {
-      --fs-800: 5rem;
-      --fs-700: 2.5rem;
-      --fs-600: 1.5rem;
-      --fs-500: 1.25rem;
-      --fs-400: 1rem;
+    --fs-800: 5rem;
+    --fs-700: 2.5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
   }
 }
 
 @media (min-width: 45em) {
   :root {
-      /* font-sizes */
-      --fs-800: 6.25rem;
-      --fs-700: 3.5rem;
-      --fs-600: 2rem;
-      --fs-500: 1.75rem;
-      --fs-400: 1.125rem;
+    /* font-sizes */
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
   }
 }
 
@@ -148,8 +148,15 @@ select {
   display: flex;
   gap: var(--gap, 1rem); /*(dynamic, default 1 rem)*/
 }
-.block{
-  display:block;
+.flex-column {
+  flex-direction: column;
+}
+.flex.even-columns {
+  width: 100%;
+}
+
+.block {
+  display: block;
 }
 .grid {
   display: grid;
@@ -176,11 +183,17 @@ select {
 }
 
 .grid-container {
-  border: 5px solid red;
   display: grid;
+  text-align: center;
+  place-items:center;
+  padding-inline:1rem;
 }
-@media (min-width:45rem ) {
+.grid-container>*{
+  max-width:50ch ;
+}
+@media (min-width: 45rem) {
   .grid-container {
+    text-align: left;
     column-gap: var(--container-gap, 2rem);
     grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
         2rem,
@@ -189,11 +202,9 @@ select {
   }
   .grid-container > *:first-child {
     grid-column: 2;
-    outline: 5px solid rgb(0, 255, 195);
   }
   .grid-container > *:last-child {
     grid-column: 3;
-    outline: 5px solid rgb(64, 255, 0);
   }
 }
 
