@@ -1,4 +1,19 @@
 .primaryHeader{
     align-items: center;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
+
+.burger {
+    display: none;
+  }
+  
+  @media (max-width: 35em) {
+    .burger {
+      display: block;
+      position: absolute;
+      z-index:2000;
+      right: 1rem;
+      top:2rem;
+      border:0
+    }
+  }
