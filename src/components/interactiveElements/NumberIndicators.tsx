@@ -1,9 +1,9 @@
-import navigationStyles from "../../modules/Navigation.module.css";
+import styles from "../../modules/DesignSystem.module.css";
 
 const NumberIndicators = () => {
   return (
     <div
-      class={`${navigationStyles.numberIndicators} grid`}
+      class={`${styles.numberIndicators} grid`}
       style="--gap:1rem; margin: 2rem 0"
     >
       <button aria-selected="true">

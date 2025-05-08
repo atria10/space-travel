@@ -1,3 +1,47 @@
+
+.tabList {
+  --gap: 2rem;
+}
+
+.dotIndicators > * {
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: 0.5rem;
+  background-color: hsl(var(--clr-white) / 0.25);
+}
+.dotIndicators > *:hover,
+.dotIndicators > *:focus {
+  background-color: hsl(var(--clr-white) / 0.5);
+}
+
+.dotIndicators > .active,
+.dotIndicators > [aria-selected="true"] {
+  background-color: hsl(var(--clr-white) / 1);
+}
+
+.numberIndicators > * {
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  max-width: 4rem;
+  max-height: 4rem;
+  padding: 0;
+  background-color: hsl(var(--clr-white) / 0.25);
+}
+
+.numberIndicators > *:hover,
+.numberIndicators > *:focus {
+  background-color: hsl(var(--clr-white) / 0.5);
+}
+.numberIndicators > .active,
+.numberIndicators > [aria-selected="true"] {
+  background-color: hsl(var(--clr-white) / 1);
+}
+
+
 .numberedTitle {
   font-family: var(--ff-sans-cond);
   font-size: var(--fs-500);

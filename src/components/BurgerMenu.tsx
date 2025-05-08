@@ -1,4 +1,4 @@
-import { Menu } from "lucide-solid";
+import { Menu, X } from "lucide-solid";
 import { Accessor, Setter } from "solid-js";
 import buttonStyles from "../modules/Button.module.css";
 import styles from "../modules/Navbar.module.css";
@@ -18,7 +18,7 @@ const BurgerMenu = ({ isOpen, setIsOpen }: Props) => {
         data-visible={isOpen()?"true":"false"}
         onClick={toggle}
       >
-        <Menu size={24} />
+        {isOpen()?<X size={24}/>:<Menu size={24} />}
 
         <span class="sr-only">Menu</span>
       </button>

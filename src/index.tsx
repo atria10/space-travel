@@ -2,11 +2,12 @@
 import { render } from "solid-js/web";
 
 import { Route, Router } from "@solidjs/router";
-import Home from "./pages/Home";
-import DesignSystem from "./pages/DesignSystem";
 import "./index.css";
-import NotFound from "./pages/NotFound";
 import { Layout } from "./Layout";
+import DesignSystem from "./pages/DesignSystem";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import { Destination } from "./pages/Destination";
 
 const root = document.getElementById("root");
 
@@ -20,6 +21,7 @@ render(
   () => (
     <Router root={Layout}>
       <Route path="/home" component={Home} />
+      <Route path="/destination" component={Destination} />
       <Route path="/design-system" component={DesignSystem} />
       <Route path="*paramName" component={NotFound} />
     </Router>

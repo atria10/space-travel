@@ -1,3 +1,26 @@
+
+.underlineIndicators > * {
+  padding: var(--underline-gap, 1rem) 0;
+  border: 0;
+  cursor: pointer;
+  border-bottom: 0.2rem solid hsl(var(--clr-white) / 0);
+}
+
+.underlineIndicators > *:hover,
+.underlineIndicators > *:focus {
+  border-color: hsl(var(--clr-white) / 0.5);
+}
+
+.underlineIndicators > .active,
+.underlineIndicators > [aria-selected="true"] {
+  border-color: hsl(var(--clr-white) / 1);
+  color: hsl(var(--clr-white) / 1);
+}
+
+
+/* ----------------- */
+/* Related to links menu, drawer behaviour  */
+/* ----------------- */
 .primaryNavigation {
   --underline-gap: 2rem;
   list-style: none;
@@ -8,6 +31,16 @@
   position: relative;
   inset: 0;
 }
+
+.primaryNavigation A {
+  text-decoration: none;
+}
+
+.primaryNavigation A > span {
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
 .isClosed,.isOpen{
   transform:translateX(0)
 }
@@ -45,71 +78,3 @@
     transform:translateX(0%)
   }}
 
-.primaryNavigation A {
-  text-decoration: none;
-}
-
-.primaryNavigation A > span {
-  font-weight: 700;
-  margin-right: 0.5em;
-}
-
-.underlineIndicators > * {
-  padding: var(--underline-gap, 1rem) 0;
-  border: 0;
-  cursor: pointer;
-  border-bottom: 0.2rem solid hsl(var(--clr-white) / 0);
-}
-
-.underlineIndicators > *:hover,
-.underlineIndicators > *:focus {
-  border-color: hsl(var(--clr-white) / 0.5);
-}
-
-.underlineIndicators > .active,
-.underlineIndicators > [aria-selected="true"] {
-  border-color: hsl(var(--clr-white) / 1);
-  color: hsl(var(--clr-white) / 1);
-}
-
-.tabList {
-  --gap: 2rem;
-}
-
-.dotIndicators > * {
-  cursor: pointer;
-  border: 0;
-  border-radius: 50%;
-  aspect-ratio: 1;
-  padding: 0.5rem;
-  background-color: hsl(var(--clr-white) / 0.25);
-}
-.dotIndicators > *:hover,
-.dotIndicators > *:focus {
-  background-color: hsl(var(--clr-white) / 0.5);
-}
-
-.dotIndicators > .active,
-.dotIndicators > [aria-selected="true"] {
-  background-color: hsl(var(--clr-white) / 1);
-}
-
-.numberIndicators > * {
-  cursor: pointer;
-  border: 0;
-  border-radius: 50%;
-  aspect-ratio: 1;
-  max-width: 4rem;
-  max-height: 4rem;
-  padding: 0;
-  background-color: hsl(var(--clr-white) / 0.25);
-}
-
-.numberIndicators > *:hover,
-.numberIndicators > *:focus {
-  background-color: hsl(var(--clr-white) / 0.5);
-}
-.numberIndicators > .active,
-.numberIndicators > [aria-selected="true"] {
-  background-color: hsl(var(--clr-white) / 1);
-}

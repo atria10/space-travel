@@ -34,10 +34,10 @@
   display: inline-grid;
   place-items: center;
   text-decoration: none;
-  background: none;
   cursor: pointer;
-  color: hsl(var(--clr-white));
   border: none;
+  background: none;
+  color: hsl(var(--clr-white))
 }
 
 .toggleButton::after {
@@ -50,15 +50,12 @@
 }
 
 .toggleButton:hover {
-  color: hsl(var(--clr-dark));
   border-radius: 10%;
-}
-.toggleButton:hover::after,
-.toggleButton:focus::after {
-  opacity: 1;
-  transform: scale(1.5);
-  background: hsl(var(--clr-white)/.7);
-  border-radius: 10%;
-  color: hsl(var(--clr-dark));
+  transform: scale(1.1);
 
+}
+
+.toggleButton:focus-visible{
+  outline:1px solid white;
+  border-radius:10%
 }

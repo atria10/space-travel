@@ -1,19 +1,36 @@
-.primaryHeader{
-    align-items: center;
-    padding: 1rem 2rem;
+/* ----------------- */
+/* wrapper  */
+/* ----------------- */
+
+.primaryHeader {
+  align-items: center;
+  padding: 1.5rem clamp(1rem, 5vh, 3rem);
 }
 
+
+
 .burger {
-    display: none;
+  display: none;
+}
+
+@media (max-width: 35em) {
+  .burger {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 1rem;
+    padding: 1.5rem clamp(1rem, 5vh, 3rem);
+    top: 1rem;
+    border: 0;
   }
-  
-  @media (max-width: 35em) {
-    .burger {
-      display: block;
-      position: absolute;
-      z-index:2000;
-      right: 1rem;
-      top:2rem;
-      border:0
-    }
+}
+
+@media (min-width: 35em) {
+  .navItems {
+    background: hsl(var(--clr-dark) / 75%);
+    backdrop-filter: blur(1.5rem);
+    border-radius: 1rem;
   }
+}
+
+

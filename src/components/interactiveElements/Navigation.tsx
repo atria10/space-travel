@@ -1,6 +1,6 @@
 import { A } from "@solidjs/router";
 import { Accessor, For } from "solid-js";
-import navigationStyles from "../../modules/Navigation.module.css";
+import styles from "../../modules/Navigation.module.css";
 type Props = {
   links: string[];
   isPreview?: boolean;
@@ -17,14 +17,14 @@ const Navigation = ({
       <nav>
         <ul
           id="primaryNavigation"
-          class={`${navigationStyles.primaryNavigation} ${
-            isOpen() ? navigationStyles.isOpen : navigationStyles.isClosed
-          } ${navigationStyles.underlineIndicators} flex`}
+          class={`${styles.primaryNavigation} ${
+            isOpen() ? styles.isOpen : styles.isClosed
+          } ${styles.underlineIndicators} flex`}
         >
           <For each={links}>
             {(link, i) => (
               <A
-                activeClass={navigationStyles.active}
+                activeClass={styles.active}
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
                 href={isPreview ? "#" : `/${link}`}
               >

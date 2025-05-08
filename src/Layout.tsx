@@ -5,7 +5,7 @@ import styles from "./modules/Layout.module.css";
 
 const backgrounds: Record<string, string> = {
   "/home": "homeBackground",
-  "/destinations": "destinationBackground",
+  "/destination": "destinationBackground",
   "/crew": "crewBackground",
   "/technology": "technologyBackground",
 };
