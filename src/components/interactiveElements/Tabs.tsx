@@ -10,11 +10,15 @@ const Tabs = ({ options, active, onClick }: Props) => {
   return (
     <div
       class={`${navigationStyles.underlineIndicators} ${styles.tabList} flex`}
-      style="margin: 2rem 0"
+      style="margin: 2rem auto"
     >
       <For each={options}>
         {(option) => (
           <div
+          classList={{
+            [navigationStyles.activeTab]: option === active(),
+            [navigationStyles.inactiveTab]: option !== active()
+          }}
             aria-selected={option === active() ? "true" : "false"}
             onClick={() => onClick(option)}
           >

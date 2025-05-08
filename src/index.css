@@ -63,6 +63,11 @@
 *::after {
   box-sizing: border-box;
 }
+.logo {
+  width:clamp(1.5rem, 6vw, 10rem);
+  height:clamp(1.5rem, 6vw, 10rem);
+
+}
 
 /*  Remove default margin */
 body,
@@ -190,7 +195,7 @@ select {
    excluding the first child, and outlines them for debugging purposes */
 .flow > * + * {
   margin-top: var(--flow-space, 1rem);
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* .flow > *:not(:first-child) {
@@ -218,6 +223,7 @@ select {
   text-align: center;
   place-items: center;
   padding-inline: 1rem;
+  padding-bottom:3rem
 }
 .grid-container > * {
   max-width: 50ch;
