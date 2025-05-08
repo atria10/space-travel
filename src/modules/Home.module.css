@@ -1,4 +1,11 @@
-.home{
-    padding-bottom: max(6rem,15vh);
-    align-items: end;
+.home {
+  padding-bottom: max(6rem, 15vh);
+  align-items: end;
+}
+
+.home > *:first-child {
+  grid-column: 2;
+}
+.home > *:last-child {
+  grid-column: 3;
 }

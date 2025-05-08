@@ -18,7 +18,7 @@
     display: block;
     position: absolute;
     z-index: 2000;
-    right: 3rem;
+    right: 1rem;
     /* padding: 1.5rem clamp(1rem, 5vh, 3rem); */
     top: 1.5rem;
     border: 0;

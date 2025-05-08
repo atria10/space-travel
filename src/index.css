@@ -64,8 +64,8 @@
   box-sizing: border-box;
 }
 .logo {
-  width:clamp(1.5rem, 6vw, 10rem);
-  height:clamp(1.5rem, 6vw, 10rem);
+  width:clamp(1.5rem, 3vw, 10rem);
+  height:clamp(1.5rem, 3vw, 10rem);
 
 }
 
@@ -223,7 +223,7 @@ select {
   text-align: center;
   place-items: center;
   padding-inline: 1rem;
-  padding-bottom:3rem
+  padding-bottom:3rem;
 }
 .grid-container > * {
   max-width: 50ch;
@@ -237,12 +237,7 @@ select {
         1fr
       );
   }
-  .grid-container > *:first-child {
-    grid-column: 2;
-  }
-  .grid-container > *:last-child {
-    grid-column: 3;
-  }
+
 }
 
 .sr-only {

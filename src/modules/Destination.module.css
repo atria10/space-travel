@@ -4,13 +4,13 @@
     "title"
     "image"
     "tabs"
-    "content";
+    "article";
 }
-.destination > h2 {
+.destination > .title {
   grid-area: title;
 }
 
-.destination > img {
+.destination > picture {
   grid-area: image;
   max-width: 60%;
   margin-inline: auto;
@@ -22,13 +22,40 @@
 }
 
 .destination > article {
-  grid-area: content;
+  grid-area: article;
+  text-align: justify;
+  place-items: center;
 }
 
 .meta {
   flex-direction: column;
-  --gap: 2rem;
   border-top: 1px solid hsl(var(--clr-white) / 0.1);
   padding-top: 2.5rem;
   margin-top: 2.5rem;
+}
+
+@media (min-width: 35rem) {
+  h2 {
+    justify-self: center;
+  }
+  .meta {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+
+@media (min-width: 45rem) {
+  .destination {
+    text-align:center;
+    justify-items: center;
+    grid-template-areas:
+      "title title tabs ."
+      "image image tabs ."
+      "image image article .";
+  }
+  .destination > picture {
+    max-width: 50%;
+  }
+ 
 }

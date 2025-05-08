@@ -5,7 +5,9 @@ import homeStyles from "../modules/Home.module.css";
 
 const Home: Component = () => {
   return (
-    <div class={`grid-container ${homeStyles.home}`}>
+    <div class={`grid-container ${homeStyles.home} flow`}
+    style={"--gap:4rem; margin-top:2rem; "}
+>
       <div>
         <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
           So you want to travel to

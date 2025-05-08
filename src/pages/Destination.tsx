@@ -17,23 +17,19 @@ export const Destination = () => {
     setActive(_destination.name);
   };
 
-
   return (
-    <div
-      class={`grid-container ${styles.destination} flow`}
-      style={"--gap:2rem; place-items:start; margin-top:2rem; "}
-    >
-      <div style="margin-x:auto; width:100%">
+    <div class={`grid-container ${styles.destination} flow`}>
+      <div class={styles.title}>
         <h2 class={`${designStyles.numberedTitle}`}>
           <span class="text-accent">01</span> Pick your destination
         </h2>
       </div>
 
-      <img
-        id={`${destination().name}-image`}
-        src={destination().images.png}
-        alt={destination().name}
-      />
+      <picture id={`${destination().name}-image`}>
+        <source srcset={destination().images.webp} type="image/webp" />
+        <img src={destination().images.png} alt={destination().name} />
+      </picture>
+
       <section>
         <Tabs
           options={destinations.map((item) => item.name)}
