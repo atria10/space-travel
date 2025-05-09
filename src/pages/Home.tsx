@@ -1,4 +1,3 @@
-import { A } from "@solidjs/router";
 import type { Component } from "solid-js";
 import buttonStyles from "../modules/Button.module.css";
 import homeStyles from "../modules/Home.module.css";
@@ -21,12 +20,12 @@ const Home: Component = () => {
       </div>
 
       <div>
-        <A
-          href="#"
+        <p
           class={`${buttonStyles.largeButton} uppercase ff-serif bg-white text-dark `}
+          style='cursor:default'
         >
           Explore
-        </A>
+        </p>
       </div>
     </div>
   );

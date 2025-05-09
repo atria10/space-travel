@@ -1,4 +1,3 @@
-
 .underlineIndicators > * {
   padding: var(--underline-gap, 1rem) 0;
   border: 0;
@@ -16,7 +15,6 @@
   border-color: hsl(var(--clr-white) / 1);
   color: hsl(var(--clr-white) / 1);
 }
-
 
 /* ----------------- */
 /* Related to links menu, drawer behaviour  */
@@ -41,8 +39,9 @@
   margin-right: 0.5em;
 }
 
-.isClosed,.isOpen{
-  transform:translateX(0)
+.isClosed,
+.isOpen {
+  transform: translateX(0);
 }
 /* @supports (backdrop-filter: blur(1.5rem)) {
   .primaryNavigation{
@@ -65,16 +64,16 @@
     flex-direction: column;
     transition: opacity 0.5s linear, transform 0.3s ease-in-out;
   }
-  
+
   .primaryNavigation.underlineIndicators > .active {
     border: 0;
   }
-  .isClosed{
-    transform:translateX(100%)
+  .isClosed {
+    transform: translateX(100%);
   }
 }
 @media (min-width: 35rem) {
   .primaryNavigation {
-    transform:translateX(0%)
-  }}
-
+    transform: translateX(0%);
+  }
+}

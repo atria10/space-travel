@@ -1,0 +1,60 @@
+.crew {
+  --flow-space: 2rem;
+  grid-template-areas:
+    "title"
+    "article"
+    "image"
+    "dots";
+}
+.crew > .title {
+  grid-area: title;
+}
+
+.crew > picture {
+  grid-area: image;
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+.crew > section {
+  grid-area: dots;
+  margin: 0 auto;
+}
+
+.crew > article {
+  grid-area: article;
+  text-align: justify;
+  place-items: center;
+}
+
+.meta {
+  flex-direction: column;
+  border-top: 1px solid hsl(var(--clr-white) / 0.1);
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 35rem) {
+  h2 {
+    justify-self: center;
+  }
+  .meta {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 45rem) {
+  .crew {
+    text-align: center;
+    justify-items: center;
+    grid-template-areas:
+      "title title image ."
+      ". article image ."
+      ". dots image .";
+  }
+  .crew > picture {
+    max-width: 70%;
+    align-self: flex-end;
+  }
+}

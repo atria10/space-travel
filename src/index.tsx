@@ -8,6 +8,7 @@ import DesignSystem from "./pages/DesignSystem";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import { Destination } from "./pages/Destination";
+import { Crew } from "./pages/Crew";
 
 const root = document.getElementById("root");
 
@@ -22,6 +23,7 @@ render(
     <Router root={Layout}>
       <Route path="/home" component={Home} />
       <Route path="/destination" component={Destination} />
+      <Route path="/crew" component={Crew} />
       <Route path="/design-system" component={DesignSystem} />
       <Route path="*paramName" component={NotFound} />
     </Router>
