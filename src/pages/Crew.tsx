@@ -22,7 +22,7 @@ export const Crew = () => {
     >
       <div
         class="[grid-area:title] text-center md:text-left text-lg
-       md:text-2xl lg:text-3xl flex justify-center md:justify-start md:px-4 lg:px-[15%]"
+       md:text-2xl lg:text-3xl flex justify-center md:justify-start "
       >
         <NumberedTitle number={"02"} title="Meet your crew" />
       </div>
@@ -42,13 +42,13 @@ export const Crew = () => {
         </p>
       </main>
 
-      <section class="[grid-area:image] border-[hsl(0_0%_100%_/_20%)] border-b-1">
+      <section class="[grid-area:image] border-[hsl(0_0%_100%_/_20%)] border-b-1  lg:self-end">
         <picture id={`${crew().name}-image`}>
           <source srcset={crew().images.webp} type="image/webp" />
           <img
             src={crew().images.png}
             alt={crew().name}
-            class="max-w-[60%] mx-auto md:max-w-[50%] lg:max-w-[70%] lg:min-w-[60%]"
+            class="max-w-[60%] mx-auto md:max-w-[50%] lg:max-w-[70%]"
           />
         </picture>
       </section>
